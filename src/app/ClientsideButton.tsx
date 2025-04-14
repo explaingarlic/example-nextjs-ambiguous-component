@@ -8,7 +8,9 @@ export default function ClientsideButton() {
     const title = useTitle();
 
     return (
+        
         <button
+            className="bg-white text-black hover:text-blue hover:shadow-md hover:px-5 px-2 py-1 transition-all"
             onClick={() => {
                 setNumber(Math.random());
             }}
