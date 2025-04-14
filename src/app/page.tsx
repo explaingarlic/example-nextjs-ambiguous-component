@@ -1,6 +1,6 @@
-import { Display1 } from "@sainsburys-tech/fable";
 import { UselessProvider } from "./provider";
 import ClientsideButton from "./ClientsideButton";
+import ServersideComponent from "./ServersideComponent";
 import AmbiguousComponent from "./AmbiguousComponent";
 
 
@@ -15,11 +15,14 @@ import AmbiguousComponent from "./AmbiguousComponent";
 export default function Home() {
   return (
     <UselessProvider>
+      {/* look, this is rendered on the *server*! see the network devtools and look for this <h1> sup</h1>... */}
       <h1> sup</h1>
 
       <ClientsideButton />
 
-      <AmbiguousComponent />
+      <ServersideComponent />
+
+      <AmbiguousComponent/>
     </UselessProvider>
   )
 }

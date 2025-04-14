@@ -1,12 +1,7 @@
-import ClientsideDisplayNumber from "./ClientsideDisplayNumber";
+export default function AmbiguousComponent({  }) {
 
-export default function AmbiguousComponent() {
-
+    // Now this one, this depends on where you use it.
     return (
-        <div>
-            This is server side gosh dangit! see: {process.env.myEnvvar ?? ""}
-
-            <ClientsideDisplayNumber/>
-        </div>
+        <h1>{process.env.myEnvvar ?? "this is on the client!"}</h1>
     )
 }
