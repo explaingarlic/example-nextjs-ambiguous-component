@@ -11,7 +11,10 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.4"
+    "next": "15.1.4",
+    "@sainsburys-tech/fable": "^4.1.1",
+    "@sainsburys-tech/icons": "^3.1.0",
+    "@sainsburys-tech/nextjs-support": "^0.4.1"
   },
   "devDependencies": {
     "typescript": "^5",
